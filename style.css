@@ -42,6 +42,7 @@ form {
     position: absolute;
     top: 0;
     border: none;
+    outline: none;
 }
 .input-container {
     position: relative;
@@ -58,6 +59,7 @@ form {
     position: absolute;
     left: 0;
     bottom: 0;
+    overflow: visible;
 }
 .checkbox-label {
     font-size: 0.7rem;
