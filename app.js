@@ -168,3 +168,25 @@ gsap.fromTo(
         ease: "Power2.easeOut",
     }
 );
+
+//! Submit button
+const button = document.querySelector("button");
+const timeline3 = gsap.timeline({
+    defaults: { duration: 0.75, ease: "Power2.easeOut" },
+});
+button.addEventListener("click", (e) => {
+    e.preventDefault();
+    timeline3.to(".contact-right, .contact-left", {
+        y: 30,
+        opacity: 0,
+        pointerEvents: "none",
+    });
+    timeline3.to("form", { scale: 0.8 }, "<");
+    timeline3.fromTo(".submitted", { opacity: 0, y: 30 }, { opacity: 1, y: 0 });
+    gsap.set("#hand", { transformOrigin: "left" });
+    gsap.fromTo(
+        "#hand",
+        { rotation: 0, y: 0 },
+        { rotation: -10, y: 2, ease: "elastic(3, 0.3)", duration: 2, dellay: 1 }
+    );
+});
