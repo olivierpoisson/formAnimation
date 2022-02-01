@@ -141,3 +141,53 @@ button {
     transform: translate(-50%, -50%);
     opacity: 0;
 }
+@media screen and (max-width: 812px) {
+    form {
+        width: 90vw;
+        height: 80vh;
+        flex-direction: column;
+        padding: 0rem 3rem;
+        align-items: center;
+    }
+    .contact-left {
+        flex: none;
+        padding-bottom: 30px;
+        padding-top: 50px;
+    }
+    .contact-right {
+        flex: none;
+        justify-content: center;
+    }
+    .input-container {
+        padding: 10px;
+    }
+    .promo-container {
+        padding: 10px;
+    }
+    .line-svg {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 450px) {
+    form {
+        width: 90vw;
+        height: 80vh;
+        flex-direction: column;
+        padding: 0rem 3rem;
+    }
+    .contact-left {
+        flex: none;
+        padding-bottom: 20px;
+    }
+    .contact-right {
+        flex: none;
+        justify-content: center;
+    }
+    .input-container {
+        padding: 0;
+        margin: 10px 0px;
+    }
+    .promo-container {
+        padding: 10px;
+    }
+}
