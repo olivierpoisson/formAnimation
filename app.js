@@ -144,3 +144,27 @@ checkbox.addEventListener("click", () => {
         timeline2.to(".checkbox-label", { color: "#c5c5c5" }, "<");
     }
 });
+
+gsap.set("#eye", { transformOrigin: "center" });
+gsap.fromTo(
+    "#eye",
+    { scaleY: 1 },
+    {
+        scaleY: 0.3,
+        repeat: -1,
+        yoyo: true,
+        repeatDelay: 0.5,
+        ease: "Power2.easeOut",
+    }
+);
+gsap.fromTo(
+    "#eyebrow",
+    { y: 0 },
+    {
+        y: -1,
+        repeat: -1,
+        yoyo: true,
+        repeatDelay: 0.5,
+        ease: "Power2.easeOut",
+    }
+);
